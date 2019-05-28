@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -132,34 +132,30 @@ table {
 }
 html,
 body {
+  height: 100%;
+  font-size: 62.5%;
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
   border: 2px solid brown;
   background: #fff;
-  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15), 0 -10px 0 -5px burlywood,
-    0 -10px 1px -4px rgba(0, 0, 0, 0.15), 0 -20px 0 -10px peru,
-    0 -20px 1px -9px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15), 0 -10px 0 -5px burlywood, 0 -10px 1px -4px rgba(0, 0, 0, 0.15), 0 -20px 0 -10px peru, 0 -20px 1px -9px rgba(0, 0, 0, 0.15);
   padding: 30px;
   background: cornsilk;
   font-family: Papyrus, fantasy;
 }
-
 .container {
   width: auto;
   margin: 0 auto;
 }
-
 header {
   width: auto;
   margin: auto;
   display: flex;
 }
-
 .profile-picture {
   width: auto;
   display: flex;
 }
-
 header nav {
   width: 600px;
   display: flex;
@@ -167,28 +163,23 @@ header nav {
   margin: 10px 10px 10px 25px;
   justify-content: space-evenly;
 }
-
 header nav a {
   font-size: 1rem;
   color: brown;
   text-decoration: none;
 }
-
 header nav a:hover {
   text-decoration: underline;
   color: blue;
 }
-
 h1 {
   margin: 10px 10px 10px 10px;
   font-size: 2.5rem;
   color: brown;
 }
-
 .freelance {
   display: flex;
 }
-
 .freelance-text {
   display: flex;
   flex-direction: wrap;
@@ -199,7 +190,6 @@ h1 {
 p {
   margin-bottom: 2rem;
 }
-
 button {
   background: brown;
   color: cornsilk;
@@ -210,13 +200,11 @@ button {
   border: 2px solid black;
   cursor: pointer;
 }
-
 button:hover {
   background: burlywood;
   color: brown;
   border: 2px solid brown;
 }
-
 .mid-content {
   padding-top: 30px;
   display: flex;
@@ -229,23 +217,48 @@ button:hover {
   justify-content: space-between;
   margin-left: 15px;
 }
-
 h2 {
   font-size: 1.5rem;
   padding-bottom: 15px;
+  font-weight: bold;
 }
-
 p {
   display: block;
   line-height: 1.5;
   justify-content: space-around;
 }
-@media (max-width 500px) {
+@media (max-width: 500px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+  header nav {
+    flex-direction: column;
+  }
   header nav a {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .image-wrapper {
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-content: center;
   }
-.profile-picture {
-  flex-direction: column;
-  align-content: center;
+  .profile-picture {
+    width: 55%;
+    margin-bottom: 20px;
+  }
+}
+.lower-content .text-content h3 {
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  font-weight: bold;
 }
