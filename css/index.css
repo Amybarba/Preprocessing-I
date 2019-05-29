@@ -132,19 +132,19 @@ table {
 }
 html,
 body {
-  height: 100%;
+  height: 100vh;
   font-size: 62.5%;
   width: 100%;
   max-width: 1000px;
-  border: 2px solid brown;
   background: #fff;
   box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15), 0 -10px 0 -5px burlywood, 0 -10px 1px -4px rgba(0, 0, 0, 0.15), 0 -20px 0 -10px peru, 0 -20px 1px -9px rgba(0, 0, 0, 0.15);
-  padding: 30px;
+  padding: 15px 15px 0 15px;
   background: cornsilk;
   font-family: Papyrus, fantasy;
 }
 .container {
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
 }
 header {
@@ -164,7 +164,7 @@ header nav {
   justify-content: space-evenly;
 }
 header nav a {
-  font-size: 1rem;
+  font-size: 1.7rem;
   text-decoration: none;
   color: brown;
 }
@@ -174,7 +174,7 @@ header nav a:hover {
 }
 h1 {
   margin: 10px 10px 10px 10px;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: brown;
 }
 .freelance {
@@ -188,15 +188,16 @@ h1 {
   padding-bottom: 5%;
 }
 p {
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 button {
   background: brown;
   color: cornsilk;
   font-family: Papyrus, fantasy;
   margin-top: 8px;
-  padding: 20px;
-  font-size: 1.1rem;
+  padding: 15px;
+  font-size: 1.5rem;
   border: 2px solid black;
   cursor: pointer;
 }
@@ -206,7 +207,7 @@ button:hover {
   border: 2px solid brown;
 }
 .mid-content {
-  padding-top: 30px;
+  padding-top: 15px;
   display: flex;
 }
 .text-content {
@@ -219,14 +220,14 @@ button:hover {
 }
 h2 {
   font-size: 1.5rem;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   font-weight: bold;
   color: brown;
+  display: flex;
 }
 p {
   display: flex;
   line-height: 1.5;
-  justify-content: space-around;
 }
 @media (max-width: 500px) {
   header {
@@ -245,7 +246,7 @@ p {
     margin: 10px 10px 10px 10px;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .image-wrapper {
     width: 100%;
@@ -257,14 +258,35 @@ p {
     width: 55%;
     margin-bottom: 20px;
   }
+  .mid-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 20px 0px;
+  }
+  .text-content p {
+    align-content: center;
+    font-size: 8px;
+  }
 }
-p {
+.mid-content .text-content p {
   display: flex;
+  font-size: 1.4rem;
 }
 h3 {
   font-size: 1.5rem;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   font-weight: bold;
   color: brown;
-  background: pink;
+}
+table {
+  width: 100%;
+  text-align: left;
+  justify-content: space-between;
+}
+th {
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  padding: 8px 0 8px 0;
 }
